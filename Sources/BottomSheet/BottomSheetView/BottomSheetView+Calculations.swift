@@ -186,9 +186,6 @@ internal extension BottomSheetView {
         if self.isIPad {
             // On iPad use 30% of the width
             return geometry.size.width * 0.3
-        } else if UIDevice.current.userInterfaceIdiom == .phone && UIDevice.current.orientation.isLandscape {
-            // On iPhone landscape use 40% of the width
-            return geometry.size.width * 0.4
         } else {
             // On iPhone portrait or iPad split screen use 100% of the width
             return geometry.size.width
